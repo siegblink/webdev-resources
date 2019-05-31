@@ -1,5 +1,7 @@
 import React from 'react'
 
 export default function Section({ columnName, children }) {
-  return <div className={columnName}>{children}</div>
+  const { first } = columnName
+
+  return <div className={first}>{children}</div>
 }

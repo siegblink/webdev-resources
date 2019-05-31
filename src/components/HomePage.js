@@ -5,8 +5,13 @@ import Article from './Article'
 import Topic from './Topic'
 
 export default function HomePage() {
+  const columnName = {
+    first: 'col-1',
+    second: 'col-2',
+  }
+
   return (
-    <Section columnName={`col-1`}>
+    <Section columnName={columnName}>
       <Topic>
         <Header />
         <Article />

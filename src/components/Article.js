@@ -1,16 +1,20 @@
 import React from 'react'
+import getAllAboutReact from '../data/allAboutReact'
 
 export default function Article() {
-  return (
-    <article className='content-container'>
-      <p className='bookmark'>
-        <a
-          href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-          className='bookmark-text'
-        >
-          JavaScript - MDN Web Docs
-        </a>
-      </p>
-    </article>
-  )
+  const { links } = getAllAboutReact()
+
+  const renderLink = links.map((link, index) => {
+    return (
+      <article className='content-container' key={index}>
+        <p className='bookmark'>
+          <a href={link.url} className='bookmark-text'>
+            {link.name}
+          </a>
+        </p>
+      </article>
+    )
+  })
+
+  return <React.Fragment>{renderLink}</React.Fragment>
 }
