@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-.App-header {
+body {
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.read-list {
+  font-weight: 300;
+  color: #48dbfb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  font-size: 24px;
+}
+
+.bookmark-text {
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s color ease-out;
+}
+
+.bookmark-text:hover {
+  color: #ff7979;
+}
+
+/* Grid System */
+
+.grid-container {
+  width: 97%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-gap: 10px 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(300px, auto);
+  grid-template-areas: 'first second';
+}
+
+.col-1 {
+  grid-area: first;
+}
+.col-2 {
+  grid-area: second;
 }
