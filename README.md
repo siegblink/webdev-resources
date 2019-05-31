@@ -11,7 +11,7 @@ The resource list is divided into 11 different main topics.
  - Developer Blog Sites
  - JavaScript Updates
  - Coding Tutorials
- - All About React.js
+ - Everything React.js
  - Essential Web Tools
  - Learn Web Development
  - Useful Web Design Tools
