@@ -1,8 +1,7 @@
 import React from 'react'
-import getAllAboutReact from '../data/allAboutReact'
 
-export default function Article() {
-  const { links } = getAllAboutReact()
+export default function Article({ getData }) {
+  const { links } = getData()
 
   const renderLink = links.map((link, index) => {
     return (

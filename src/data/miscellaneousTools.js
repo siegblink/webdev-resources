@@ -1,6 +1,6 @@
 export default function getMiscellaneousTools() {
   return {
-    name: 'Miscellaneous Tools',
+    title: 'Miscellaneous Tools',
     links: [
       {
         name: 'Amazon',

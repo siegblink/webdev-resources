@@ -1,6 +1,6 @@
 export default function getRProgrammingResources() {
   return {
-    title: 'R Programming Resources',
+    title: 'R-Programming Resources',
     links: [
       {
         name: 'R for Data Science',

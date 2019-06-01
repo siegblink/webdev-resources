@@ -1,4 +1,4 @@
-export default function getAllAboutReact() {
+export default function getEverythingReact() {
   return {
     title: 'Everything React.js',
     links: [
