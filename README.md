@@ -4,6 +4,8 @@ You can also find here useful resources for coding in general.
 Included here is useful resource for learning Data Science with R Programming language.
 
 If you want to contribute, please read CONTRIBUTING.md for guidelines.
+From there, you can always submit a pull request to suggest an improvement to the content.
+Open an issue if you have questions.
 
 The resource list is divided into 11 different main topics.
 
