@@ -1,11 +1,14 @@
+import getBookmarks from '../api/getBookmarks'
+
 export default function getMustReadList() {
-  return {
+  const bookmarks = {
     title: 'Must Read List',
-    links: [
-      {
-        name: 'JavaScript - MDN Web Docs',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-      },
-    ],
+    links: [],
   }
+
+  const data = getBookmarks()
+  const mustReadListData = data.slice(0, 18)
+  bookmarks.links = [...mustReadListData]
+
+  return bookmarks
 }
