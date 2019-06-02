@@ -7,7 +7,12 @@ export default function Article({ getData }) {
     return (
       <article className='content-container' key={index}>
         <p className='bookmark'>
-          <a href={link.url} className='bookmark-text'>
+          <a
+            href={link.url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='bookmark-text'
+          >
             {link.name}
           </a>
         </p>
