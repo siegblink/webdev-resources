@@ -1,14 +1,20 @@
 import React from 'react'
 import GridContainer from './grid/GridContainer'
-import HomePage from './components/HomePage'
+import Page from './components/Page'
 import './App.css'
 
-function App() {
+import getFunctionList from './components/FunctionStore'
+
+export default function App() {
+  const firstFunctionList = getFunctionList().slice(0, 6)
+  const secondFunctionList = getFunctionList().slice(6)
+
   return (
     <GridContainer>
-      <HomePage />
+      <Page
+        firstFunctionList={firstFunctionList}
+        secondFunctionList={secondFunctionList}
+      />
     </GridContainer>
   )
 }
-
-export default App
