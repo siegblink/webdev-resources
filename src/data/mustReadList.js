@@ -83,6 +83,11 @@ export default function getMustReadList() {
         name: 'Everything cURL',
         url: 'https://ec.haxx.se/',
       },
+      {
+        name: '5 Tips to Write Better Conditionals in JavaScript',
+        url:
+          'https://scotch.io/bar-talk/5-tips-to-write-better-conditionals-in-javascript',
+      },
     ],
   }
 }
