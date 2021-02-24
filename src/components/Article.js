@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react';
 
 export default function Article({ getData }) {
   const { links } = getData()
@@ -20,5 +20,5 @@ export default function Article({ getData }) {
     )
   })
 
-  return <React.Fragment>{renderLink}</React.Fragment>
+  return <Fragment>{renderLink}</Fragment>;
 }

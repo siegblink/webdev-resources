@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react';
 import Header from './Header'
 import Article from './Article'
 
@@ -12,5 +12,5 @@ export default function Column({ functionList }) {
     )
   })
 
-  return <React.Fragment>{renderSection}</React.Fragment>
+  return <Fragment>{renderSection}</Fragment>;
 }

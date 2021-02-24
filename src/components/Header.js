@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Header({ getData }) {
   const { title } = getData()
   const wordList = title.split(' ')

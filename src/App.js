@@ -1,4 +1,3 @@
-import React from 'react'
 import GridContainer from './grid/GridContainer'
 import Page from './components/Page'
 import './App.css'
