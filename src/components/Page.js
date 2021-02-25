@@ -1,4 +1,4 @@
-import React from 'react'
+import { Fragment } from 'react';
 import Section from './Section'
 import Column from './Column'
 
@@ -13,5 +13,5 @@ export default function Page({ firstFunctionList, secondFunctionList }) {
     )
   })
 
-  return <React.Fragment>{renderColumn}</React.Fragment>
+  return <Fragment>{renderColumn}</Fragment>;
 }
